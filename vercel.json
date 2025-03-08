@@ -1,1 +1,56 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "assets/mainPage/main.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "assets/detailsPage/details.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "assets/jsFile/main.js",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "assets/jsFile/theme.js",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "assets/mainPage/main.css",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "assets/detailsPage/details.css",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/mainPage",
+        "dest": "/assets/mainPage/main.html"
+      },
+      {
+        "src": "/detailsPage",
+        "dest": "/assets/detailsPage/details.html"
+      },
+      {
+        "src": "/assets/jsFile/main.js",
+        "dest": "/assets/jsFile/main.js"
+      },
+      {
+        "src": "/assets/jsFile/theme.js",
+        "dest": "/assets/jsFile/theme.js"
+      },
+      {
+        "src": "/assets/mainPage/main.css",
+        "dest": "/assets/mainPage/main.css"
+      },
+      {
+        "src": "/assets/detailsPage/details.css",
+        "dest": "/assets/detailsPage/details.css"
+      }
+    ]
+  }
+  
