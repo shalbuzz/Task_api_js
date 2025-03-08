@@ -1,0 +1,364 @@
+body{
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #fafafa;
+    min-height: 100vh;
+    color: #111517;
+    transition: background-color 1s ease-in-out;
+}   
+
+.containers {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #fafafa;
+    width: 1600px;
+    color: #111517;
+   
+}
+
+
+.navbar {
+   
+    height: 60px;
+    font-size: 13px;
+    padding: 15px 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .2);
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 1s ease-in-out;
+
+
+    
+   
+}
+
+
+
+
+.header-mode{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-title {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.header-btn {
+    border: none;
+    color: #111517;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 60px 45px;
+}
+
+.search-bar-form{
+    position: relative;
+}
+
+.search-bar-form-input{
+    width: 480px;
+    height: 50px;
+    padding: 20px 60px;
+    background-color: #fff;
+    color: #858585;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, .2);
+    border-radius: 4px;
+    transition: background-color 1s ease-in-out;
+    outline: none;
+    
+
+}
+
+.search-bar-form-icon{
+    position: absolute;
+    left: 20px;
+    top:15px;
+    color: #858585;
+    font-size: 20px;
+}
+
+.filter{
+    position: relative;
+    background-color: #fff;
+    height: 50px;
+    width: 190px;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 4px;
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, .2);
+    transition: background-color 1s ease-in-out;
+}
+
+.filter p{
+    font-size: 13px;
+}
+
+.filter-icon{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filter-select{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    width: 190px;
+    margin-top: 3px;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 4px;
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, .2);
+    transition: background-color 1s ease-in-out;
+    
+}
+
+.filter-select.show {
+    display: block; 
+}
+
+.filter-select ul {
+    list-style: none;
+    padding: 0;
+    
+    
+}
+
+.filter-select ul li {
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 10px;
+  
+    
+}
+
+.filter-select ul li:hover{
+    color: rgb(156, 156, 156);
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 30px;
+    justify-content: space-between;
+    margin: 0 60px;
+    padding-bottom: 30px;
+}
+
+.card{
+    width: 270px;
+    height: 300px;
+    margin-bottom: 55px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-flag{
+    width: 100%;
+    height: 170px;
+}
+
+.card-flag img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+   
+}
+
+.card-description{
+    height: 175px;
+    padding: 25px;
+    background-color: #fafafa;
+    color: #111517;
+    border-radius: 5px;
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, .2);
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+
+}
+
+
+
+.cards-content-title {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.cards-content-details {
+    margin-top: 20px;
+    line-height: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.cards-content-details span{
+    font-weight: 600;
+}
+
+
+  
+.spinner {
+    position: fixed;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;  
+}  
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+body.dark-mode  {
+    background-color: #202c37;
+    color: #fff;
+    transition: background-color 1s ease-in-out;
+
+
+}
+
+.navbar.dark-mode  {
+    background-color: #2b3945;
+    box-shadow: 0 7px 29px 0 rgb(105 105 115 / 20%);
+    transition: background-color 1s ease-in-out;
+
+}
+
+
+.dark-mode svg{
+    stroke: white;
+    fill: white;
+    stroke-width: 0;
+    height: 1em;
+    width: 1em;
+}
+
+
+
+.header-btn.dark-mode  {
+    color: #e0e0e0;
+}
+
+.search-bar-form-input.dark-mode  {
+    background-color: #2b3945;
+    color: #fff;
+    box-shadow: 0 7px 29px 0 rgb(105 105 115 / 20%);
+
+}
+
+.dark-mode .search-bar-form-input::placeholder {
+    color: #d2cece; 
+    
+}
+
+.dark-mode .filter-select{
+    display: none;
+     position: absolute;
+     z-index: 5;
+     width: 190px;
+     margin-top: 3px;
+     background-color: #2b3945;
+     padding: 15px 20px;
+     border-radius: 4px;
+     box-shadow: 0 7px 29px 0 rgba(100, 100, 111, .2);
+
+ }
+ 
+ .dark-mode .filter-select.show {
+     display: block; 
+ }
+
+ .dark-mode .filter-select ul li:hover{
+    color: rgb(156, 156, 156);
+}
+
+
+.search-bar-form-icon.dark-mode {
+    color: #fff;
+    box-shadow: 0 7px 29px 0 rgb(105 105 115 / 20%);
+
+}
+.filter.dark-mode  {
+    background-color: #2b3945;
+    color: #fff;
+    box-shadow: 0 7px 29px 0 rgb(105 105 115 / 20%);
+    transition: background-color 1s ease-in-out;
+
+
+}
+
+.dark-mode .filter-select ul li {
+    color: #e0e0e0;
+    transition: background-color 1s ease-in-out;
+
+}
+
+.dark-mode .card {
+    background-color: #2b3945;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+
+
+}
+
+.dark-mode .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(178, 178, 178, 0.2);
+}
+
+.dark-mode .card-description {
+    background-color: #2b3945;
+    color: #fff;
+    box-shadow: 0 7px 29px 0 rgba(0, 0, 0, .2);
+}
+
+.dark-mode .country-btn {
+    background-color: #333;
+    color: #e0e0e0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .24);
+}
