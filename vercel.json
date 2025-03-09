@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "routes": [
-    { "src": "/mainPage", "dest": "/main.html" },
-    { "src": "/detailsPage", "dest": "/details.html" }
-  ]
-}
